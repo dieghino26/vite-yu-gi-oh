@@ -1,12 +1,18 @@
 <script >
 import AppMain from "./components/AppMain.vue"
+import AppLogo from "./components/AppLogo.vue";
 export default {
   name: "Pokedex",
-  components: { AppMain }
+  components: {
+    AppMain,
+    AppLogo
+  }
 }
 </script>
 
 <template>
+  <AppLogo />
+
   <AppMain />
 </template>
 
