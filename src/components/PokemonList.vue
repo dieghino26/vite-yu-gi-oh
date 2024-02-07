@@ -18,7 +18,9 @@ export default {
     <div id="pokemon" class="row">
         <div class="col my-3 mx-2" v-for="pokemon in pokemons">
             <img :src="pokemon.imageUrl" alt="">
+            <div>{{ pokemon.number }}</div>
             <div>{{ pokemon.name }}</div>
+            <div class="type">{{ pokemon.type1 }}</div>
         </div>
     </div>
 </template>
@@ -32,6 +34,7 @@ export default {
         border-radius: 20px;
         text-align: center;
         font-weight: bold;
+        padding: 5px;
     }
 
     img {
@@ -39,5 +42,6 @@ export default {
         width: 150px;
         border-radius: 20px;
     }
+
 }
 </style>
