@@ -19,6 +19,8 @@ export default {
     border: 10px solid white;
     border-radius: 20px;
     max-width: 1000px;
+    max-height: 600px;
+    overflow: auto;
 
 }
 </style>
